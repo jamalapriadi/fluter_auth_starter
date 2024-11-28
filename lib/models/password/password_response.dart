@@ -10,7 +10,7 @@ class PasswordResponse {
 
   factory PasswordResponse.fromJson(Map<String, dynamic> json) =>
       PasswordResponse(
-          success: json["success"] ?? '',
+          success: json["success"] ?? false,
           message: json["message"] ?? '',
           errors: json["errors"] ?? '');
 
